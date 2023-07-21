@@ -1,20 +1,19 @@
+import classNames from 'classnames'
 import icons from './icons.svg'
 import styles from './Icon.module.css'
 
-type IconWrapperProps = {
-  name: string
-  color?: string
+type IconProps = {
+  color?: 'primary' | 'secondary'
 }
 
-type IconProps = {
-  color?: string
+interface IconWrapperProps extends IconProps {
+  name: string
 }
 
 const Icon = ({ name, color }: IconWrapperProps) => {
-  const colorClass = color ? styles[color] : ''
   return (
     <div className={styles.icon}>
-      <svg viewBox='0 0 24 24' className={colorClass}>
+      <svg viewBox='0 0 24 24' className={classNames(color && styles[color])}>
         <use href={`${icons}#${name}`} />
       </svg>
     </div>
