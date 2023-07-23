@@ -1,0 +1,28 @@
+body {
+  border: 5px solid grey;
+
+  @media (--from-small) {
+    border: 5px solid red;
+  }
+
+  @media (--from-medium) {
+    border: 5px solid cyan;
+  }
+
+  @media (--from-large) {
+    border: 5px solid green;
+  }
+
+  /* .home {
+    border: 2px solid red;
+
+    &_card {
+      border: 2px solid blue;
+    }
+  } */
+}
+
+h1 {
+  font-family: var(--font-family-heading);
+  color: var(--primary);
+}
