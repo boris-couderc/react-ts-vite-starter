@@ -24,7 +24,6 @@ const Home = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
           est laborum.
         </p>
-        <br />
         <Link to='/page'>Page</Link>
       </div>
     </>
