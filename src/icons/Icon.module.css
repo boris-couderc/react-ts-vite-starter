@@ -7,9 +7,9 @@
 }
 
 .primary {
-  color: var(--primary);
+  color: var(--color-primary);
 }
 
 .secondary {
-  color: var(--neutral);
+  color: var(--color-neutral);
 }
