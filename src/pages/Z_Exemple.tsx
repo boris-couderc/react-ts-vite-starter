@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import '~/styles/index.pcss'
 
-import { IconReact, IconAccount } from './icons/Icon'
+import { IconReact, IconAccount } from '../icons/Icon'
 
 import viteLogo from '/vite.svg'
 
@@ -16,7 +16,7 @@ function App() {
           <img src={viteLogo} className='logo' alt='Vite logo' />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Lorem</h1>
       <div className='home'>
         <div className='home_card'>
           <button onClick={() => setCount(count => count + 1)}>count is {count}</button>
